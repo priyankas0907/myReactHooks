@@ -6,6 +6,7 @@ import { ThemeProvider } from "./utils/ThemeContext";
 import { CountContextProvider } from "./utils/CountContext";
 import DomRef from "./useRefDemo/DomRef";
 import PersistStateExample from "./useRefDemo/PersistStateExample";
+import MemoDemo from "./useMemoDemo/MemoDemo";
 
 function App() {
   // function countInitial() {
@@ -32,6 +33,8 @@ function App() {
         </CountContextProvider>
       </ThemeProvider>
       <DomRef />
+      <br></br>
+      <MemoDemo />
       <br></br>
       <PersistStateExample />
       {/* <button onClick={decrement}>-</button>
