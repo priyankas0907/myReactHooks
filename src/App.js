@@ -3,6 +3,7 @@ import "./App.css";
 import UseEffectClassDemo from "./useFFDEmo/UseEffectClassDemo";
 import ContextDemo from "./useContextDemo/ContextDemo";
 import { ThemeProvider } from "./utils/ThemeContext";
+import { CountContextProvider } from "./utils/CountContext";
 
 function App() {
   // function countInitial() {
@@ -24,7 +25,9 @@ function App() {
     <>
       <ThemeProvider>
         <UseEffectClassDemo name="abc" />
-        <ContextDemo />
+        <CountContextProvider>
+          <ContextDemo />
+        </CountContextProvider>
       </ThemeProvider>
       {/* <button onClick={decrement}>-</button>
       <span>{count}</span>
